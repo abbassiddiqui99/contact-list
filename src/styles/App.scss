@@ -1,0 +1,20 @@
+.action {
+  opacity: 0;
+}
+tr:hover .action {
+  opacity: 1;
+}
+
+tbody td a {
+  color: #222;
+  &:hover {
+    color: #222;
+  }
+}
+
+.create-contact {
+  width: 100%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.89);
+  }
+}
