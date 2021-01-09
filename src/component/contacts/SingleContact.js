@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "react-avatar";
+import { Link } from "react-router-dom";
 
 const SingleContact = ({ contact }) => {
   return (
@@ -17,12 +18,12 @@ const SingleContact = ({ contact }) => {
       <td>{contact.phone}</td>
       <td>{contact.email}</td>
       <td className="action">
-        <a href="#">
+        <Link to={`/contacts/edit/${contact.id}`}>
           <span className="material-icons mr-2">edit</span>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="#">
           <span className="material-icons text-danger">remove_circle</span>
-        </a>
+        </Link>
       </td>
     </tr>
   );
